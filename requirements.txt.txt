@@ -1,0 +1,2 @@
+python-telegram-bot[webhooks]>=20,<21
+python-dotenv>=1.0.0
