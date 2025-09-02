@@ -1,9 +1,0 @@
-# Required settings
-BOT_TOKEN=123456789:ABCDEF-your-token-here
-
-# Channel username (starts with @) OR numeric id (like -1001234567890). 
-# Add the bot as an admin of this channel.
-CHANNEL_ID=@your_channel_or_-1001234567890
-
-# Comma-separated telegram user IDs who can moderate
-ADMIN_IDS=111111111,222222222
