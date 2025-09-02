@@ -412,12 +412,11 @@ if __name__ == "__main__":
         webhook_url = env("WEBHOOK_URL")
         # Запускаем встроенный aiohttp-сервер и регистрируем вебхук
         app.run_webhook(
-            listen="0.0.0.0",
-            port=port,
-            webhook_url=webhook_url,
-            webhook_path="/telegram",
-            drop_pending_updates=True,
-        )
+    listen="0.0.0.0",
+    port=port,
+    webhook_url=webhook_url,  # ВАЖНО: URL уже ДОЛЖЕН заканчиваться на /telegram
+    drop_pending_updates=True,
+)
     else:
         # Резерв: polling (не используется на Render)
         app.run_polling(drop_pending_updates=True)
